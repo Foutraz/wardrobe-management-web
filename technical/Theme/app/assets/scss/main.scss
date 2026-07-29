@@ -1,0 +1,14 @@
+:root {
+  --app-content-max-width: 72rem;
+  --app-section-gap: 1.5rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

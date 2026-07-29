@@ -1,0 +1,11 @@
+{
+  "wardrobe": "Dressing",
+  "the technical foundation is up and running": "Le socle technique est opérationnel",
+  "language": "Langue",
+  "this field is required": "Ce champ est obligatoire",
+  "enter a valid email address": "Saisissez une adresse e-mail valide",
+  "enter at least {min} characters": "Saisissez au moins {min} caractères",
+  "enter at most {max} characters": "Saisissez au plus {max} caractères",
+  "your session has expired, please sign in again": "Votre session a expiré, veuillez vous reconnecter",
+  "something went wrong, please try again": "Une erreur est survenue, veuillez réessayer"
+}

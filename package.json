@@ -1,0 +1,50 @@
+{
+  "name": "wardrobe-management-web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.18.0",
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "typecheck": "nuxt typecheck",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@mdi/font": "^7.4.47",
+    "@nuxtjs/i18n": "^10.5.0",
+    "@pinia/nuxt": "^1.0.1",
+    "@sentry/nuxt": "^10.68.0",
+    "laravel-raom-nuxt": "^0.3.7",
+    "nuxt": "^4.5.1",
+    "nuxt-osdd": "^1.0.5",
+    "pinia": "^4.0.2",
+    "pinia-plugin-persistedstate": "^4.7.1",
+    "sass": "^1.102.0",
+    "sass-loader": "^17.0.0",
+    "vue": "^3.5.40",
+    "vue-router": "^5.2.0",
+    "vue3-toastify": "^0.2.9",
+    "vuetify": "^4.1.6"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-decorators": "^8.0.2",
+    "@babel/plugin-syntax-typescript": "^8.0.3",
+    "@nuxt/eslint": "^1.16.0",
+    "@nuxt/test-utils": "^4.1.0",
+    "@rollup/plugin-babel": "^7.1.0",
+    "@vue/test-utils": "^2.4.11",
+    "eslint": "^10.8.0",
+    "happy-dom": "^20.11.1",
+    "prettier": "^3.9.6",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.10",
+    "vue-tsc": "^3.3.8"
+  }
+}

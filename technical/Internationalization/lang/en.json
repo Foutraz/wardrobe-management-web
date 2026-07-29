@@ -1,0 +1,11 @@
+{
+  "wardrobe": "Wardrobe",
+  "the technical foundation is up and running": "The technical foundation is up and running",
+  "language": "Language",
+  "this field is required": "This field is required",
+  "enter a valid email address": "Enter a valid email address",
+  "enter at least {min} characters": "Enter at least {min} characters",
+  "enter at most {max} characters": "Enter at most {max} characters",
+  "your session has expired, please sign in again": "Your session has expired, please sign in again",
+  "something went wrong, please try again": "Something went wrong, please try again"
+}
