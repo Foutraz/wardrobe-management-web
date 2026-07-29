@@ -1,6 +1,6 @@
 import * as Sentry from '@sentry/nuxt'
 
-const { sentryDsn } = useRuntimeConfig().public
+const sentryDsn = tryUseNuxtApp()?.$config.public.sentryDsn ?? ''
 
 if (sentryDsn !== '') {
   Sentry.init({

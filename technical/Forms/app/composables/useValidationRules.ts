@@ -4,7 +4,11 @@ export const useValidationRules = () => {
   const { t } = useI18n()
 
   const required = (value: unknown) => {
-    const isFilled = Array.isArray(value) ? value.length > 0 : value !== null && value !== undefined && value !== ''
+    if (Array.isArray(value)) {
+      return value.length > 0 || t('this field is required')
+    }
+
+    const isFilled = value !== null && value !== undefined && value !== '' && value !== false
 
     return isFilled || t('this field is required')
   }

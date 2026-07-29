@@ -21,12 +21,18 @@ describe('useValidationRules', () => {
   it('accepts a filled value and rejects an empty one', () => {
     expect(rules.required('a shirt')).toBe(true)
     expect(rules.required(['a shirt'])).toBe(true)
-    expect(rules.required(false)).toBe(true)
 
     expect(rules.required('')).toBe('Ce champ est obligatoire')
     expect(rules.required(null)).toBe('Ce champ est obligatoire')
     expect(rules.required(undefined)).toBe('Ce champ est obligatoire')
     expect(rules.required([])).toBe('Ce champ est obligatoire')
+  })
+
+  it('rejects an unchecked checkbox but accepts a zero quantity', () => {
+    expect(rules.required(false)).toBe('Ce champ est obligatoire')
+
+    expect(rules.required(true)).toBe(true)
+    expect(rules.required(0)).toBe(true)
   })
 
   it('accepts a well-formed email address and rejects a malformed one', () => {
